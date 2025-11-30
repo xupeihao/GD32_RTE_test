@@ -2,9 +2,16 @@
 #include "systick.h"
 #include <stdio.h>
 #include "app.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+TaskHandle_t Task1_handle = NULL;
 
 
-
+// 任务栈溢出回调函数
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
+    printf("Stack overflow in task %s\r\n", pcTaskName);
+}
 
 void lib_timer5_on_cb() {
 	
@@ -13,7 +20,12 @@ void lib_timer5_on_cb() {
 //void lib_usart0_on_recv(uint8_t* data, uint16_t len) {
 //	
 //}
-
+void Task1(void *pvParameters) {
+    while(1) {
+        printf("Task1 is running\r\n");
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
 
 int main(void) {
 
@@ -26,8 +38,10 @@ int main(void) {
 	printf("MCU start\r\n");
 	
 	App_init();
+	xTaskCreate(Task1, "Task1", 128, NULL, 2, &Task1_handle);
 
-
+	vTaskStartScheduler();
+	
     while(1) {
 		
     }

@@ -34,4 +34,15 @@
   ..\Libraries\wdog\wdog_config.h ..\Libraries\adc\lib_adc.h \
   ..\Libraries\adc\ADC_config.h ..\Libraries\spi\lib_spi.h \
   ..\Libraries\spi\spi_config.h ..\Libraries\i2c\lib_i2c.h \
-  ..\Libraries\i2c\i2c_config.h ..\Hardware\bsp.h
+  ..\Libraries\i2c\i2c_config.h ..\Hardware\bsp.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\FreeRTOS.h \
+  D:\Keil5\ARM\ARMCLANG\bin\..\include\stddef.h \
+  RTE\RTOS\FreeRTOSConfig.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\projdefs.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\portable.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\deprecated_definitions.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\portable\GCC\ARM_CM4F\portmacro.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\mpu_wrappers.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\task.h \
+  D:\Keil5\Pack\ARM\CMSIS-FreeRTOS\10.5.1\Source\include\list.h
