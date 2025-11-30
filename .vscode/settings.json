@@ -1,7 +1,11 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "app.h": "c",
-        "systick.h": "c"
-    }
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "app.h": "c",
+    "systick.h": "c"
+  },
+  "files.exclude": {
+    "Project": true,
+    ".vscode": true
+  }
 }
